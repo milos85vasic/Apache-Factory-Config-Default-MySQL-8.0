@@ -65,4 +65,3 @@ max_allowed_packet	= 16M
 [isamchk]
 key_buffer		= 16M
 
-# !includedir /etc/mysql/conf.d/
