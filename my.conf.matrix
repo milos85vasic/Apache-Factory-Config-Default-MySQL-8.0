@@ -1,9 +1,9 @@
 [client]
 port		= APACHE_FACTORY_MYSQL_PORT
-socket		= /home/test1/MySQL/mysqld.sock
+socket		= APACHE_FACTORY_MYSQL_SOCK_DIR/mysqld.sock
 
 [mysqld_safe]
-socket		= /home/test1/MySQL/mysqld.sock
+socket		= APACHE_FACTORY_MYSQL_SOCK_DIR/mysqld.sock
 nice		= 0
 
 [mysqld]
