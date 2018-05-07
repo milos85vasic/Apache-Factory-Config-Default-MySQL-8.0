@@ -8,8 +8,8 @@ nice		= 0
 
 [mysqld]
 user		= APACHE_FACTORY_MYSQL_USER
-pid-file	= /home/test1/MySQL/mysqld.pid
-socket		= /home/test1/MySQL/mysqld.sock
+pid-file	= APACHE_FACTORY_MYSQL_PID_DIR/mysqld.pid
+socket		= APACHE_FACTORY_MYSQL_SOCK_DIR/mysqld.sock
 port		= 3306
 basedir		= /home/test1/MySQL
 datadir		= /home/test1/MySQL_Data
