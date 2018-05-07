@@ -7,7 +7,7 @@ socket		= APACHE_FACTORY_MYSQL_SOCK_DIR/mysqld.sock
 nice		= 0
 
 [mysqld]
-user		= test1
+user		= APACHE_FACTORY_MYSQL_USER
 pid-file	= /home/test1/MySQL/mysqld.pid
 socket		= /home/test1/MySQL/mysqld.sock
 port		= 3306
