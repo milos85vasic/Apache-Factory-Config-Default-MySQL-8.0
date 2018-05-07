@@ -14,7 +14,7 @@ port		= APACHE_FACTORY_MYSQL_PORT
 basedir		= APACHE_FACTORY_MYSQL_BASE_DIR
 datadir		= APACHE_FACTORY_MYSQL_DATA_DIR
 tmpdir		= APACHE_FACTORY_MYSQL_TMP_DIR
-lc-messages-dir	= /usr/share/mysql
+lc-messages-dir	= APACHE_FACTORY_MYSQL_SHARE_DIR
 skip-external-locking
 skip-character-set-client-handshake
 default-storage-engine = InnoDB
@@ -36,7 +36,7 @@ thread_concurrency     =  4
 query_cache_type   = 1
 query_cache_limit	= 1M
 query_cache_size   = 8M
-general_log_file        = /home/test1/MySQL/mysql.log
+general_log_file        = APACHE_FACTORY_MYSQL_LOG_DIR/mysql.log
 log_error = /home/test1/MySQL/error.log
 slow_query_log       = 1
 slow_query_log_file	= /var/log/mysql/mysql-slow.log
