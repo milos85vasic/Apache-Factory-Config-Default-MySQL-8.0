@@ -37,9 +37,9 @@ query_cache_type   = 1
 query_cache_limit	= 1M
 query_cache_size   = 8M
 general_log_file        = APACHE_FACTORY_MYSQL_LOG_DIR/mysql.log
-log_error = /home/test1/MySQL/error.log
+log_error = APACHE_FACTORY_MYSQL_LOG_DIR/error.log
 slow_query_log       = 1
-slow_query_log_file	= /var/log/mysql/mysql-slow.log
+slow_query_log_file	= APACHE_FACTORY_MYSQL_LOG_DIR/mysql-slow.log
 long_query_time      = 1
 
 expire_logs_days	= 14
