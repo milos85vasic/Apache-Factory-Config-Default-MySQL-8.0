@@ -11,9 +11,9 @@ user		= APACHE_FACTORY_MYSQL_USER
 pid-file	= APACHE_FACTORY_MYSQL_PID_DIR/mysqld.pid
 socket		= APACHE_FACTORY_MYSQL_SOCK_DIR/mysqld.sock
 port		= APACHE_FACTORY_MYSQL_PORT
-basedir		= /home/test1/MySQL
-datadir		= /home/test1/MySQL_Data
-tmpdir		= /tmp
+basedir		= APACHE_FACTORY_MYSQL_BASE_DIR
+datadir		= APACHE_FACTORY_MYSQL_DATA_DIR
+tmpdir		= APACHE_FACTORY_MYSQL_TMP_DIR
 lc-messages-dir	= /usr/share/mysql
 skip-external-locking
 skip-character-set-client-handshake
