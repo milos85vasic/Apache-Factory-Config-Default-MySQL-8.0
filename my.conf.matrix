@@ -22,20 +22,13 @@ character-set-server = utf8
 transaction-isolation = READ-COMMITTED
 
 bind-address		= 127.0.0.1
-key_buffer		      = 16M
 max_allowed_packet	= 16M
 thread_stack		    = 192K
 thread_cache_size   = 16
-myisam-recover         = BACKUP
 max_connections        = 300
 table_open_cache       = 64
-thread_concurrency     = 10
 table_open_cache       = 32
-thread_concurrency     =  4
 
-query_cache_type   = 1
-query_cache_limit	= 1M
-query_cache_size   = 8M
 general_log_file        = APACHE_FACTORY_MYSQL_LOG_DIR/mysql.log
 log_error = APACHE_FACTORY_MYSQL_LOG_DIR/error.log
 slow_query_log       = 1
@@ -44,16 +37,6 @@ long_query_time      = 1
 
 expire_logs_days	= 14
 max_binlog_size         = 1G
-innodb_data_file_path = ibdata1:128M:autoextend
-innodb_file_per_table = 1
-skip-innodb_doublewrite
-innodb_additional_mem_pool_size = 12M
-innodb_buffer_pool_size         = 256M
-innodb_log_buffer_size          = 8M
-innodb_log_file_size            = 8M
-innodb_flush_log_at_trx_commit  = 0
-innodb_flush_method             = O_DIRECT
-innodb_support_xa               = OFF
 
 [mysqldump]
 quick
@@ -61,7 +44,4 @@ quote-names
 max_allowed_packet	= 16M
 
 [mysql]
-
-[isamchk]
-key_buffer		= 16M
 
